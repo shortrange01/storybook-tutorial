@@ -39,5 +39,5 @@ export default {
             return this.tasks.length === 0;
         }
     }
-}
+};
 </script>

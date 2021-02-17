@@ -5,8 +5,8 @@ export default {
     title: 'Task',
     component: Task,
     // Dataで終わるエクスポートはstoriesではない
-    excludeStories: /.*Data$/,
-}
+    excludeStories: /.*Data$/
+};
 
 export const actionsData = {
     onPinTask: action('pin-task'),
@@ -17,7 +17,7 @@ const Template = (args, { argTypes }) => ({
     components: { Task },
     props: Object.keys(argTypes),
     methods: actionsData,
-    template: '<Task v-bind="$props" @pin-task="onPinTask" @archive-task="onArchiveTask" />',
+    template: '<Task v-bind="$props" @pin-task="onPinTask" @archive-task="onArchiveTask" />'
 });
 
 export const Default = Template.bind({});
@@ -28,13 +28,13 @@ Default.args = {
         state: 'TASK_INBOX',
         updatedAt: new Date(2018, 0, 1, 9, 0)
     }
-}
+};
 
 export const Pinned = Template.bind({});
 Pinned.args = {
     task: {
         ...Default.args.task,
-        state: 'TASK_PINNED',
+        state: 'TASK_PINNED'
     }
 };
 
@@ -44,4 +44,4 @@ Archived.args = {
         ...Default.args.task,
         state: 'TASK_ARCHIVED'
     }
-}
+};
