@@ -10,5 +10,5 @@ jobs:
       - run: yarn
       - uses: chromaui/action@v1
         with:
-          projectToken: project-token
+          projectToken: '97a502cbfd81'
           token: ${{ secrets.GITHUB_TOKEN }}
