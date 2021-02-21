@@ -1,5 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots PureInboxScreen Default 1`] = `
+<div>
+  <div
+    class="page lists-show"
+  >
+    <nav>
+      <h1
+        class="page lists-show"
+      >
+        <span
+          class="title-wrapper"
+        >
+          Taskbox
+        </span>
+      </h1>
+    </nav>
+     
+    <tasklist />
+  </div>
+</div>
+`;
+
+exports[`Storyshots PureInboxScreen Error 1`] = `
+<div>
+  <div
+    class="page list-show"
+  >
+    <div
+      class="wrapper-message"
+    >
+      <span
+        class="icon-face-sad"
+      />
+       
+      <div
+        class="title-message"
+      >
+        Oh no!
+      </div>
+       
+      <div
+        class="subtitle-message"
+      >
+        Something went wrong
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Task Archived 1`] = `
 <div
   class="list-item TASK_ARCHIVED"
