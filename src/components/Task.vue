@@ -5,7 +5,7 @@
             <span class="checkbox-custom" @click="$emit('archive-task', task.id)" />
         </label>
         <div class="title">
-            <input type="text" :value="task.title" readonly placeholder="タイトルを入力" />
+            <input type="text" :value="task.title" readonly placeholder="タイトルを入力" style="background: red;" />
         </div>
 
         <div class="actions">
